@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lista de notas</title>
+        <script type="text/javascript" src="json.js"></script>
+    </head>
+    <body>
+        <h1>Evaluación Final</h1>
+        <h2>Instrucciones para completar el proyecto</h2>
+        <p>Crear un HTML que contenga un script en el cual se defina un JSON formado por 10 objetos estudiantes con las siguientes propiedades:</p>
+        <ul>
+            <li>código (tipo texto),</li>
+            <li>nombre (tipo texto),</li>
+            <li>nota (tipo numérico).</li>
+        </ul>
+        <p>La idea es crear 4 botones con su respectiva acción. La primera acción es mostrar todos los objetos del JSON con sus respectivas propiedades en pantalla. La segunda acción es calcular la nota promedio y mostrarla en pantalla. La tercera acción es mostrar en pantalla el estudiante con la nota mayor. La cuarta acción es mostrar en pantalla el estudiante con la menor nota de todas.</p>
+    </body>
+    <h2>Solución</h2>
+    <div>
+        <input type="button" value="JSON" onclick="mostrarStudents();">
+        <p id="students"></p>
+        <input type="button" value="Promedio" onclick="promedio();">
+        <p id="average"></p>
+        <input type="button" value="Mejor Nota" onclick="mejorNota();">
+        <p id="best"></p>
+        <input type="button" value="Peor Nota" onclick="peorNota();">
+        <p id="worst"></p>
+    </div>
+</html>
